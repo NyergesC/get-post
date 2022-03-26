@@ -5,8 +5,38 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>This is FRONTEND</title>
+	<script src="./kismacska/script.js"></script>
+	<link rel="stylesheet" href="./kismacska/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=EB+Garamond&family=Fjalla+One&family=Fredoka&family=Josefin+Sans&family=Josefin+Slab:wght@100&family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,400&family=Nunito&family=Nunito+Sans&family=Orbitron&family=Playfair+Display:wght@700&family=Poppins:wght@100;400;700&family=Shippori+Antique+B1&family=Staatliches&family=Tangerine&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div id="root"></div>
+	<div id="root">
+		<section id="container">
+			<video autoplay muted loop id="myVideo">
+			  <source src="./kismacska/beer.mp4" type="video/mp4">
+			  Your browser does not support HTML5 video.
+			</video>
+		   <h1>Choose your favourite Beer</h1>
+	  </section>
+	</div>
+	<!-- <script>
+		fetch("./public/data.json")
+			.then(response => response.json())
+			.then(data => {   
+				for (const beer of data.cards) {
+					document.getElementById('container').insertAdjacentHTML("beforeend",  `
+							<div class="cards">
+								<h2>${beer.title}</h2><br>
+								<p>${beer.sub}</p><br>
+								<p> ${beer.text}</p><br>
+							</div>
+							`            
+					)}
+			
+				})
+	</script> -->
 </body>
 </html>

@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+  }
+  a{
+    text-decoration: none;
+  }
+  a img {
+    border: none;
+  }
+  
+  button,
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button,
+  textarea,
+  select {
+    appearance: none !important;
+    border-radius: 0;
+  }
+
+/*=====================================*/
+
+body {
+    font-family: 'Fjalla One', sans-serif;;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.cards {
+    width: 40vw;
+    height: 200px;
+    margin: 0 auto;
+    background-color: white;
+    opacity: 0.7;
+    text-align: center;
+    padding: 50px 0;
+    border-radius: 15px;
+    box-shadow: 3px 3px 9px 3px grey ;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+h1 {
+    width: 280px;
+    margin: 0 auto;
+    font-size: 25px;
+    color: white;
+    margin-top: 70px
+}
+
+#myVideo {
+    object-fit: cover;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+
+  @media screen and (max-width: 1000px){
+      .cards {
+          width: 60vw;
+      }
+      h1{
+          margin-top: 30px;
+      }
+  }
+
+  @media screen and (max-width: 520px){
+      .cards {
+          width: 60vw;
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+        }
+        h1{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 80vw;
+            text-align: center;
+          
+        }
+  }
