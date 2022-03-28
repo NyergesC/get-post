@@ -14,29 +14,22 @@
 </head>
 <body>
 	<div id="root">
+		<section class="landing">
+			<div class="leftside">
+				<video autoplay muted loop id="myVideo">
+				<source src="./kismacska/beer3.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+				</video>
+			</div>
+			<div class="rightside">
+				<img class="logo" src="./kismacska/beer.logo5.png" alt="logo" width="350">
+				<img class="tap" src="./kismacska/tap.jpg" alt="tap">
+			</div>
+		</section>
 		<section id="container">
-			<video autoplay muted loop id="myVideo">
-			  <source src="./kismacska/beer.mp4" type="video/mp4">
-			  Your browser does not support HTML5 video.
-			</video>
 		   <h1>Choose your favourite Beer</h1>
 	  </section>
 	</div>
-	<!-- <script>
-		fetch("./public/data.json")
-			.then(response => response.json())
-			.then(data => {   
-				for (const beer of data.cards) {
-					document.getElementById('container').insertAdjacentHTML("beforeend",  `
-							<div class="cards">
-								<h2>${beer.title}</h2><br>
-								<p>${beer.sub}</p><br>
-								<p> ${beer.text}</p><br>
-							</div>
-							`            
-					)}
-			
-				})
-	</script> -->
+
 </body>
 </html>
