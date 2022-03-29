@@ -34,30 +34,44 @@
 /*=====================================*/
 
 body {
-    font-family: 'Fjalla One', sans-serif;;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 /*===============NAVBAR==============*/
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: cener;
-  
+nav{
+  position: absolute;
+  left: 50%;
+  top: 3%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
-nav ul{
+ nav ul{
   display: flex;
-  border: 2px solid black
-}
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+} 
 
 nav ul li, a {
   list-style: none;
+  text-shadow: 2px 2px 2px 2px grey;
 }
 
-nav ul li a{
-  padding: 1rem;
-  display: block
+nav ul li{
+  width: 200px;
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
+
+.landing li:nth-child(3){
+  color: white;
+}
+.landing li:nth-child(4){
+  color: white;
 }
 
 /*===============LANDING PAGE==============*/
@@ -69,55 +83,112 @@ nav ul li a{
   position: relative;
 }
 
-.taste {
-  font-family: 'Vollkorn SC', serif;
+ .happy {
   position: absolute;
+  /* font-family: 'Rozha One', sans-serif; */
+  /* font-family: 'Mate SC', sans-serif; */
+  font-family: 'Fjalla One', sans-serif;
   left: 50%;
-  top: 20%;
-  transform: translateX(-40%);
+  transform: translateX(calc(-50% - 120px));
+  bottom: 24%;
   color: black;
-  z-index: 1000;
+  font-size: 90px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  z-index: 100;
 }
-.quality {
-  font-family: 'Vollkorn SC', serif;
-  color: white;
+.hour {
   position: absolute;
-  left: 50%;
-  top: 20%;
-  z-index: 1000;
-}
-
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  right: 50%;
+  bottom: 24%;
+  transform: translateX(calc(50% + 110px)); 
+  font-size: 90px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  z-index: 100;
+} 
+/* .happy {
+  position: absolute;
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  font-weight: 700;
+  right: 20%;
+  bottom: 35%;
+  font-size: 100px;
+  z-index: 100;
+} 
+.ready {
+  position: absolute;
+  font-family: 'Architects Daughter', cursive;
+  color: #fec51b;
+  right: 15%;
+  top: 30%;
+  font-size: 48px;
+  z-index: 100;
+} 
+ */
 .rightside, .leftside {
   width: 50%;
   height: 100vh;
 }
-.overlay {
+.rightside::after {
+  width: 50%;
+  height: 100vh;
+  content: '';
+  /* background-color: black; */
+  background-image: linear-gradient(180deg, #181822 0%, black 35%, transparent);
+  opacity: 0.8;
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
-  width: 50%;
-  background-image: linear-gradient(90deg, black, transparent);
-  z-index: 100;
-}
-
-
+} 
 .tap {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  display: block;
   object-fit: cover;
 }
 
 .logo {
   position: absolute;
-  top: 30%;
-  left: 49.8%;
+  top: 18%;
+  left: 49.9%;
   transform: translateX(-50%);
   opacity: 0.8;
-  z-index: 101;
+  z-index: 2;
 }
 
-/* .box {
+.explorebtn {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 9%;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+ /*  background-image: linear-gradient(#fec51b, rgb(124, 109, 31)); */
+  background-image: linear-gradient(45deg, #000000, rgb(173, 172, 165));
+  border-radius: 25px;
+  background-color: transparent;
+  transition: 1s ease-in-out;
+}
+
+.explorebtn:hover {
+  transition: 1s ease-in-out;
+  background: #fec51b;
+}
+
+
+ /* .box {
   position: absolute;
   bottom: 20%;
   left: 50%;
@@ -164,13 +235,9 @@ nav ul li a{
  */
 #myVideo {
     object-fit: cover;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 50%;
+    width: 100%;
     height: 100vh;
-    z-index: -1;
-  }
+  } 
 
 /*===============DRINK MENU==============*/
 
@@ -193,14 +260,14 @@ nav ul li a{
     margin-top: 4%;
     margin-bottom: 4%;
 }
-
+/* 
 h1 {
     width: 280px;
     margin: 0 auto;
     font-size: 25px;
     color: white;
     margin-top: 70px
-}
+} */
 
 
   @media screen and (max-width: 1000px){
