@@ -37,7 +37,7 @@ body {
   font-family: 'Fjalla One', sans-serif;
 }
 
-/*===============NAVBAR==============*/
+/*==================================================================NAVBAR=========================================================================*/
 
 nav{
   position: absolute;
@@ -73,8 +73,7 @@ nav ul li{
 .landing li:nth-child(4){
   color: white;
 }
-
-/*===============LANDING PAGE==============*/
+/*===============================================================LANDING PAGE=======================================================================*/
 
 .landing {
   height: 100vh;
@@ -99,7 +98,7 @@ nav ul li{
 }
 .hour {
   position: absolute;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
   right: 50%;
   bottom: 24%;
@@ -176,7 +175,7 @@ nav ul li{
   text-transform: uppercase;
   letter-spacing: 0.2em;
  /*  background-image: linear-gradient(#fec51b, rgb(124, 109, 31)); */
-  background-image: linear-gradient(45deg, #000000, rgb(173, 172, 165));
+  background-image: linear-gradient(45deg, #222222, rgb(173, 172, 165));
   border-radius: 25px;
   background-color: transparent;
   transition: 1s ease-in-out;
@@ -184,7 +183,7 @@ nav ul li{
 
 .explorebtn:hover {
   transition: 1s ease-in-out;
-  background: #fec51b;
+  background: #d3a419;
 }
 
 
@@ -239,63 +238,35 @@ nav ul li{
     height: 100vh;
   } 
 
-/*===============DRINK MENU==============*/
+/*=================================================================SWIPER MENU======================================================================*/
 
-#container {
-    width: 100%;
-    height: 100%;
+ #container{
+  width: 100%;
+  height: 100%;
+  padding: 10% 10px;
+ }
+
+#wrapper {
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
-.cards {
-    width: 40vw;
-    height: 200px;
-    margin: 0 auto;
-    background-color: white;
-    opacity: 0.7;
-    text-align: center;
-    padding: 50px 0;
-    border-radius: 15px;
-    box-shadow: 3px 3px 9px 3px grey ;
-    margin-top: 4%;
-    margin-bottom: 4%;
+.swiper-slide {
+  display: grid;
+  justify-content: center;
+  align-items: center;  
+  place-content: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  background-color: rgb(72, 72, 78);
+/*   box-shadow: 3px 3px 9px 3px grey ; */
+  font-size: 18px;
+  color: #eeb40d;
 }
-/* 
-h1 {
-    width: 280px;
-    margin: 0 auto;
-    font-size: 25px;
-    color: white;
-    margin-top: 70px
-} */
-
-
-  @media screen and (max-width: 1000px){
-      .cards {
-          width: 60vw;
-      }
-      h1{
-          margin-top: 30px;
-      }
-  }
-
-  @media screen and (max-width: 520px){
-      .cards {
-          width: 60vw;
-          margin-top: 20px;
-          margin-bottom: 20px;
-      }
-        h2{
-            font-size: 20px;
-        }
-        p{
-            font-size: 16px;
-        }
-        h1{
-            margin-top: 30px;
-            margin-bottom: 30px;
-            width: 80vw;
-            text-align: center;
-          
-        }
-  }
+.swiper-slide img {
+  display: block;
+  margin: 0 auto;
+  height: 450px;
+  object-fit: cover;
+}
