@@ -36,84 +36,132 @@
 body {
   font-family: 'Fjalla One', sans-serif;
 }
-
-/*==================================================================NAVBAR=========================================================================*/
-/* 
-nav{
-  position: absolute;
-  left: 50%;
-  top: 3%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
- nav ul{
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  text-align: center;
-} 
-
-nav ul li, a {
-  list-style: none;
-  text-shadow: 2px 2px 2px 2px grey;
-}
-
-nav ul li{
-  width: 200px;
-  display: block;
-  text-align: center;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-}
-
-.landing li:nth-child(3){
-  color: white;
-}
-.landing li:nth-child(4){
-  color: white;
-} */
 /*===============================================================LANDING PAGE=======================================================================*/
 
 .landing {
   height: 100vh;
   width: 100%;
-/*   display: flex; */
   position: relative;
-  background-color: #020202;
+  background-color: rgb(0, 0, 0);
+  z-index: -2;
 }
 
-/* #main {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-} */
 
 #box1{
-  width: 530px;
+  width: 525px;
   height: 725px;
   background-image: url('pllybigger2.png');
   filter: grayscale(1) contrast(2);
-  background-size: 280px;
+  background-size: 250px;
   background-repeat: no-repeat;
   position:absolute;
   bottom: -100px;
-  left: 45%;
+  left: 43%;
+  z-index: 0;
   animation: anim 2s forwards, anim2 3s forwards 3s;  
 }
 #box1::after{
   content:'';
   position: absolute;
-  width: 530px;
+  width: 525px;
   height: 725px;
-  background-image: url('glassbeer2.png');
-  background-size: 600px;
+  background-image: url('pllybigger2.png');
+  background-size: 250px;
   background-repeat: no-repeat;
   left: 0px;
-  z-index: -1;
+  z-index: 0;
+  }
+  #box2{
+    width: 60%;
+    height: 50%;
+    font-family: 'Bahnschrift Condensed';
+    color: white;
+    font-size:110px;
+    font-weight: 500;
+    line-height: 130px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    overflow: hidden;
+  }
+ 
+  #text h1:nth-child(1){
+    color: transparent;
+  }
+  #text h1:nth-child(2){
+    color: white;
+    animation: liquid 4s ease-in-out infinite;
+  }
+  
+  #text h3{
+    font-size: 50px;
+    letter-spacing: 0.1em;
+    padding: 2px;
+  } 
+  
+  #text{
+    position: relative;
+    left: -100%;
+    animation: anim3 2s forwards 3s;
+  }
+  #box3{
+    overflow: hidden;
+  
+  }
+  #container-landing{
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    animation: anim4 2s forwards 2.5s;
+  }
+  
+  #logo{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+  }
+  
+  #menu{
+    font-family: 'Fjalla One', sans-serif; 
+    font-size: 14px;
+    color: white;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-right: 10%;
+    margin-top: 2%;
+    float: right;
+    
   }
 
+  #menu ul li{
+    display: inline-block;
+    margin-left: 100px;    
+  }
+
+  .viewBtn{
+    flex: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:18px;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    bottom:5%;
+    left: -100%;
+    border: 2px solid white;
+    transition: 0.8s;
+    animation: anim3 2s forwards 3s;
+  }
+
+  .viewBtn:hover{
+    color: #eeb40d;
+
+  }
+
+  /* =======LANDING PAGE ANIMATIONS===== */  
+  
   @keyframes anim{
     from{
       bottom:-100%;
@@ -124,79 +172,22 @@ nav ul li{
   }
   @keyframes anim2{
     from{
-      left:45%;
+      left:43%;
       width: 530px;
     }
     to{
-      width: 0;
-      left: 55%;
+      width: 0%;
+      left: 65%;
     }
-  }
-  #box2{
-    width: auto;
-    height: auto;
-    font-family: 'Bahnschrift Condensed';
-    color: white;
-    font-size:100px;
-    font-weight: 500;
-    line-height: 130px;
-    text-transform: uppercase;
-    position: absolute;
-    top: 30%;
-    left: 5%;
-    overflow: hidden;
-  }
-
-  #text{
-    position: relative;
-    left: -100%;
-    animation: anim3 2s forwards 3s;
   }
   @keyframes anim3{
     from{
-      left:-100%;
+      left:-110%;
     }
     to{
       left:0%
     }
   }
-  #box3{
-    overflow: hidden;
-
-  }
-  #container-landing{
-    width: 100%;
-    position: absolute;
-    top: -100%;
-    animation: anim4 2s forwards 2.5s;
-  }
-
-  #logo{
-    position: absolute;
-    top: 5%;
-    left: 5%;
-  }
-
-  #menu{
-    font-family: 'Fjalla One', sans-serif; 
-    font-size: 14px;
-    color: white;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    margin-right: 10%;
-    margin-top: 2%;
-    float: right;
-
-  }
-  #menu ul{
-    list-style: none;
-  }
-  #menu ul li{
-    display: inline-block;
-    margin-left: 100px;
-
-  }
-
   @keyframes anim4{
     from{
       top:-100%;
@@ -205,120 +196,33 @@ nav ul li{
       top: 0%;
     }
   }
+  
+  @keyframes liquid 
+  {
+    0%,100%
+    {
+      clip-path: polygon(1% 24%, 12% 21%, 27% 21%, 39% 25%, 51% 32%, 64% 37%, 78% 38%, 92% 38%, 100% 38%, 100% 100%, 1% 100%);
+    }
+    50%
+    {
+      clip-path: polygon(0% 36%, 15% 34%, 32% 29%, 46% 25%, 61% 26%, 73% 34%, 83% 41%, 96% 43%, 99% 44%, 100% 100%, 1% 100%);
+    }
+  } 
+  
 
+  
+  
 
-
- /*.happy {
-  position: absolute;
-  /* font-family: 'Rozha One', sans-serif; */
-  /* font-family: 'Mate SC', sans-serif; */
-/*   font-family: 'Fjalla One', sans-serif; */
-/*   left: 50%;
-  transform: translateX(calc(-50% - 120px));
-  bottom: 24%;
-  color: black;
-  font-size: 90px;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  z-index: 100;
-}
-.hour {
-  position: absolute;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  right: 50%;
-  bottom: 24%;
-  transform: translateX(calc(50% + 110px)); 
-  font-size: 90px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  z-index: 100;
-}   */
-/* .happy {
-  position: absolute;
-  font-family: 'Fjalla One', sans-serif;
-  color: white;
-  font-weight: 700;
-  right: 20%;
-  bottom: 35%;
-  font-size: 100px;
-  z-index: 100;
-} 
-.ready {
-  position: absolute;
-  font-family: 'Architects Daughter', cursive;
-  color: #fec51b;
-  right: 15%;
-  top: 30%;
-  font-size: 48px;
-  z-index: 100;
-} 
- */
-/* .rightside, .leftside {
-  width: 50%;
-  height: 100vh;
-}
-.rightside::after {
-  width: 50%;
-  height: 100vh;
-  content: '';
-  /* background-color: black; */
-/*   background-image: linear-gradient(180deg, #181822 0%, black 35%, transparent);
-  opacity: 0.8;
-  position: absolute;
-  top: 0;
-  right: 0;
-} 
-.tap {
-  width: 100%;
-  height: 100vh;
-  display: block;
-  object-fit: cover;
-}
-
-.logo {
-  position: absolute;
-  top: 18%;
-  left: 49.9%;
-  transform: translateX(-50%);
-  opacity: 0.8;
-  z-index: 2;
-}
-
-.explorebtn {
-  display: grid;
-  place-items: center;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 9%;
-  text-align: center;
+/* 
+ box {
   width: 200px;
-  height: 50px;
-  color: white;
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em; */
- /*  background-image: linear-gradient(#fec51b, rgb(124, 109, 31)); */
-/*   background-image: linear-gradient(45deg, hsl(45, 90%, 49%), hsl(45, 90%, 49%));
-  border-radius: 25px;
-  background-color: transparent;
-  transition: 1s ease-in-out;
-}
-
-.explorebtn:hover {
-  transition: 1s ease-in-out;
-  background: #eec13a;
-} */ 
-
-
- /* .box {
+  height: 200px;
   position: absolute;
   bottom: 20%;
-  left: 50%;
+  left: 20%;
   transform: translateX(-50%);
-  z-index: 1002;
+  z-index: 1;
+  border: solid white 2px;
 }
 
 .box span {
@@ -358,11 +262,7 @@ nav ul li{
   }
 }
  */
-/* #myVideo {
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
-  }  */
+ 
 
 /*=================================================================SWIPER MENU======================================================================*/
 
