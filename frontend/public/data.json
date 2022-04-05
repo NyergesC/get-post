@@ -7,56 +7,56 @@
             "title": "Mango Bay",
             "sub": "Mad Scientist Beer",
             "text": "Pale Ale - American",
-             "img": "./kismacska/bottle3.png"
+            "img": "./kismacska/beer.logo9.png"
         },
         {
             "title": "Távoli Galaxis",
             "sub": "Rothbeer Brewery",
             "text": "IPA - American",
-            "img": "./kismacska/bottle4.png"
+            "img": "./kismacska/beer.logo6.png"
         },
         {
             "title": "Flying Rabbit AIPA",
             "sub": "MONYO Brewing Co.",
             "text": "IPA - American",
-            "img": "./kismacska/bottle3.png"
+            "img": "./kismacska/beer.logo10.png"
         },
         {
             "title": "Liquid Cocaine",
             "sub": "Mad Scientist Beer",
             "text": "IPA - Imperial",
-            "img": "./kismacska/bottle4.png"
+            "img": "./kismacska/beer.logo9.png"
         },
         {
             "title": "Organic Chocolate Stout",
             "sub": "Samuel Smith Old Brewery",
             "text": "Stout - English",
-            "img": "./kismacska/bottle3.png"
+            "img": "./kismacska/beer.logo6.png"
             
         },
         {
             "title": "Bracia",
             "sub": "Thornbridge Brewery",
             "text": "Strong Ale - English",
-            "img": "./kismacska/bottle4.png"
+            "img": "./kismacska/beer.logo10.png"
         },
         {
             "title": "Oatmeal Stout",
             "sub": "Samuel Smith Old Brewery",
             "text": "Stout - Oatmeal",
-            "img": "./kismacska/bottle3.png"
+            "img":"./kismacska/beer.logo6.png"
         },
         {
             "title": "Black Tokyo Horizon",
             "sub": "BrewDog",
             "text": "Stout - American Imperial",
-            "img": "./kismacska/bottle4.png"
+            "img": "./kismacska/beer.logo9.png"
         },
         {
             "title": "Vintage Ale",
             "sub": "Fuller's",
             "text": "Old Ale",
-            "img": "./kismacska/bottle3.png"
+            "img": "./kismacska/beer.logo10.png"
         }
     ]
 } 
