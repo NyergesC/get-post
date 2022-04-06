@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Craft Beer</title>
-	<script src="./kismacska/script.js"></script>
-	<link rel="stylesheet" href="./kismacska/style.css">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Craft Beer</title>
+
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+		<script src="./kismacska/script.js"></script>
+
+		<link rel="stylesheet" href="./kismacska/style.css">
 
 <!-- 	SWIPER -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
@@ -18,6 +22,7 @@
 <body>
 	<div id="root">
 		<section class="landing">
+			<div class="backround"></div>
 			<div id="main">
 				<div id="box1"></div>	
 				<div id="box2">
@@ -27,21 +32,21 @@
 						<h3>Life is Brewtiful...</h3>						
 					</div>
 					<div class="landingBtn">
-						<a href="#container">Click me</a>
+						<a href="#container">Drink Menu</a>
 					</div>
 				</div>
 				<div id="box3">
 					<div id="container-landing">
 						 <div id="logo">
-							<img src="./kismacska/logo2.png" alt="logo" width="100">
+							<img src="./kismacska/logo.white.png" alt="logo" width="60">
 						</div>
 						<nav id="menu">
 							<ul>
-								<li><a class="nav-link" href="#">Home</a></li>
-								<li><a class="nav-link" href="#second">About Us</a></li>
-								<li><a class="nav-link" href="#container">Contact</a></li>
-								<li><a class="nav-link" href="#second">Blog</a></li>
-								<li><a class="nav-link" href="#container">Sign in</a></li>
+								<li><a class="nav-link1" href="#">Home</a></li>
+								<li><a class="nav-link1" href="#second">About Us</a></li>
+								<li><a class="nav-link1" href="#container">Contact</a></li>
+								<li><a class="nav-link1" href="#second">Blog</a></li>
+								<li class="mukodj"><a class="nav-link2" href="#container">Sign in</a></li>
 							</ul>
 						</nav>
 						<div class="burger">
@@ -72,28 +77,5 @@
 		<footer>
 			<p>@Powered by Coffee and Cat videos</p>
 		</footer>
-
-<!-- //====BOCSI RICHARD, TUDOM H NEM SZERETED IGY, DE MASHOGY NEM MUKODOTT CSAK HA IDE RAKTAM====// -->
-
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script>
-		var swiper = new Swiper(".mySwiper", {
-		  slidesPerView: 3,
-		  spaceBetween: 50,
-		  slidesPerGroup: 3,
-		  loop: true,
-		  loopFillGroupWithBlank: true,
-		  pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-		  },
-		  navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		  },
-		});
-	  </script>
-	</body>
-
 </body>
 </html>
